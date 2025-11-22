@@ -7,5 +7,7 @@ function getComputerChoice() {
         console.log("Rock");
     } else if (outputChoice < 1/3) {
         console.log("Paper");
+    } else {
+        console.log("Scissors");
     }
 }
