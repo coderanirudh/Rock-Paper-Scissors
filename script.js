@@ -50,6 +50,9 @@ for (let i = 0; i < 5; i++) {
     const humanSelection = getHumanChoice();
     const computerSelection = getComputerChoice();
     const validRound = playRound(humanSelection, computerSelection);
-    
+    if (!validRound) {
+        console.log("Enter a valid input!");
+        i--;
+    }
 }
 
