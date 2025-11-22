@@ -16,5 +16,5 @@ getComputerChoice();
 
 function getHumanChoice() {
     let humanChoice = prompt("Enter your choice between (Rock / Paper / Scissors) to play: ");
-
+    console.log(humanChoice);
 }
