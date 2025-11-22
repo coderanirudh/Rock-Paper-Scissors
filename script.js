@@ -12,11 +12,14 @@ function getComputerChoice() {
     } else {
         return choice = "Scissors";
     }
+    return choice;
 }
 
 
 function getHumanChoice() {
     let humanChoice = prompt("Enter your choice between (Rock / Paper / Scissors) to play: ");
+    return humanChoice;
+
 }
 
 function playGame() {
@@ -44,8 +47,10 @@ function playGame() {
             computerScore++;
         } else {
             console.log("Invalid input");
+            return false;
         }
         console.log(`Score - Human score: ${humanScore} Computer score: ${computerScore}`);
+        return true;
     }
 
     for (let i = 0; i < 5; i++) {
@@ -58,6 +63,8 @@ function playGame() {
         }
     }
 }
+
+playGame();
 
 
 
