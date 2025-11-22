@@ -3,13 +3,14 @@ let computerScore = 0;
 
 function getComputerChoice() {
     let outputChoice = Math.random();
+    let choice = '';
 
     if(outputChoice < 2/3 && outputChoice > 1/3) {
-        console.log("Rock");
+        return choice = "Rock";
     } else if (outputChoice < 1/3) {
-        console.log("Paper");
+        return choice = "Paper";
     } else {
-        console.log("Scissors");
+        return choice = "Scissors";
     }
 }
 
