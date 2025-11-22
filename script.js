@@ -33,18 +33,19 @@ function playGame() {
             (humanChoice === "Paper" && computerChoice === "Rock") ||
             (humanChoice === "Scissors" && computerChoice === "Paper")
         ) {
-            console.log("You win!");
+            console.log(`You Win! ${humanChoice} beats ${computerChoice}`);
             humanScore++;
         } else if (
             (humanChoice === "Rock" && computerChoice === "Paper") ||
             (humanChoice === "Paper" && computerChoice === "Scissors") ||
             (humanChoice === "Scissors" && computerChoice === "Rock")
         ) {
-            console.log("You lose!");
+            console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
             computerScore++;
         } else {
             console.log("Invalid input");
         }
+        console.log(`Score - Human score: ${humanScore} Computer score: ${computerScore}`);
     }
 
     for (let i = 0; i < 5; i++) {
