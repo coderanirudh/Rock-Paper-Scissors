@@ -13,3 +13,7 @@ function getComputerChoice() {
 }
 
 getComputerChoice();
+
+function getHumanChoice() {
+    
+}
