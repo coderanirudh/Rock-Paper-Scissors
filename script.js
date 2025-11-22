@@ -47,6 +47,8 @@ function playRound(humanChoice, computerChoice) {
 }
 
 for (let i = 0; i < 5; i++) {
+    const humanSelection = getHumanChoice();
+    const computerSelection = getComputerChoice();
     
 }
 
