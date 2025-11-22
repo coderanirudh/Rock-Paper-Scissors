@@ -5,5 +5,7 @@ function getComputerChoice() {
 
     if(outputChoice < 2/3 && outputChoice > 1/3) {
         console.log("Rock");
+    } else if (outputChoice < 1/3) {
+        console.log("Paper");
     }
 }
