@@ -20,6 +20,7 @@ function getHumanChoice() {
 }
 
 function playRound(humanChoice, computerChoice) {
+    humanChoice = humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1).toLowerCase();
     
 }
 
