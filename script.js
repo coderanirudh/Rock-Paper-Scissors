@@ -64,7 +64,18 @@ function playGame() {
     }
 }
 
+function displayGameResult() {
+    if (humanScore > computerScore) {
+        console.log("Congratulations! You win!");
+    } else if (humanScore == computerScore) {
+        console.log("Ooh! It's a tie! Play again!");
+    } else {
+        console.log("Shame! You lose! Play again!");
+    }
+}
+
 playGame();
+displayGameResult();
 
 
 
