@@ -21,6 +21,9 @@ function getHumanChoice() {
 
 }
 
+const buttons = document.querySelector("#container");
+
+
 function playGame() {
     function playRound(humanChoice, computerChoice) {
         humanChoice = humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1).toLowerCase();
