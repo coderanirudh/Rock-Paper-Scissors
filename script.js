@@ -21,7 +21,7 @@ function getHumanChoice() {
 
 }
 
-const container = document.querySelectorAll("#container button");
+const buttons = document.querySelectorAll("#container button");
 
 const rock = buttons[0];
 const paper = buttons[1];
