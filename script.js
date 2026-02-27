@@ -96,10 +96,13 @@ function playGame() {
 
 function displayGameResult() {
     if (humanScore > computerScore) {
+        div.textContent += `Congratulations! You Win!`;
         console.log("Congratulations! You win!");
     } else if (humanScore == computerScore) {
+        div.textContent += `Ooh! It's a tie! Play again!`;
         console.log("Ooh! It's a tie! Play again!");
     } else {
+        div.textContent += `Shame! You lose! Play again!`
         console.log("Shame! You lose! Play again!");
     }
 }
