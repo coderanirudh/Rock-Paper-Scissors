@@ -69,13 +69,15 @@ function playRound(humanChoice, computerChoice) {
             (humanChoice === "Paper" && computerChoice === "Scissors") ||
             (humanChoice === "Scissors" && computerChoice === "Rock")
         ) {
-            div.textContent = `You lose! ${computerChoice} beats ${humanChoice}\n`
+            div.textContent += `You lose! ${computerChoice} beats ${humanChoice}\n`
             console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
             computerScore++;
         } else {
+            div.textContent += `Invalid input\n`;
             console.log("Invalid input");
             return false;
         }
+        div.textContent += `Score - Human score: ${humanScore} Computer score: ${computerScore}\n`
         console.log(`Score - Human score: ${humanScore} Computer score: ${computerScore}`);
         return true;
     }
