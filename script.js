@@ -44,7 +44,7 @@ scissors.addEventListener("click", () => {
 
 
 const div = document.createElement("div");
-
+document.body.appendChild(div);
 
 function playRound(humanChoice, computerChoice) {
         humanChoice = humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1).toLowerCase();
