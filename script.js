@@ -14,13 +14,6 @@ function getComputerChoice() {
     }
 }
 
-
-function getHumanChoice() {
-    let humanChoice = buttons;
-    return humanChoice;
-
-}
-
 const buttons = document.querySelectorAll("#container button");
 
 const rock = buttons[0];
@@ -106,7 +99,6 @@ function displayGameResult() {
     }
 }
 
-playGame();
 displayGameResult();
 
 
