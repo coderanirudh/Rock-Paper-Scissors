@@ -38,6 +38,7 @@ scissors.addEventListener("click", () => {
 
 const div = document.createElement("div");
 document.body.appendChild(div);
+div.style.whiteSpace = "pre-line";
 
 function playRound(humanChoice) {
         humanChoice = humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1).toLowerCase();
@@ -75,9 +76,25 @@ function playRound(humanChoice) {
         div.textContent += `Score - Human score: ${humanScore} Computer score: ${computerScore}\n`
         console.log(`Score - Human score: ${humanScore} Computer score: ${computerScore}`);
         
+        checkGameOver();
     }
 
+function checkGameOver() {
+    if (humanScore === 5 || computerScore === 5) {
 
+        if (humanScore > computerScore) {
+            div.textContent += `🎉 You win the game!\n`;
+        } else {
+            div.textContent += `💻 Computer wins the game!\n`;
+        }
+
+        div.textContent += `--- Game Over ---\n\n`;
+
+        // Reset scores for next game
+        humanScore = 0;
+        computerScore = 0;
+    }
+}
 
 
 
