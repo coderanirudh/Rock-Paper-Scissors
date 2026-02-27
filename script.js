@@ -27,6 +27,19 @@ const rock = buttons[0];
 const paper = buttons[1];
 const scissors = buttons[2];
 
+rock.addEventListener("click", () => {
+    console.log("rock is clicked");
+})
+
+paper.addEventListener("click", () => {
+    console.log("paper is clicked");
+})
+
+scissors.addEventListener("click", () => {
+    console.log("scissors is clicked");
+})
+
+
 const div = document.createElement("div");
 
 
