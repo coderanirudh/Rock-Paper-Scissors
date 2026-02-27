@@ -49,10 +49,11 @@ document.body.appendChild(div);
 function playRound(humanChoice, computerChoice) {
         humanChoice = humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1).toLowerCase();
 
-        div.textContent = `Human Choice: ${humanChoice}, Computer Choice: ${computerChoice}\n`;
+        div.textContent += `Human Choice: ${humanChoice}, Computer Choice: ${computerChoice}\n`;
 
         if (humanChoice === computerChoice) {
-            console.log("It's a tie!");
+            div.textContent += `It's a tie\n`;
+            console.log("It's a tie")
         } else if (
             (humanChoice === "Rock" && computerChoice === "Scissors") ||
             (humanChoice === "Paper" && computerChoice === "Rock") ||
