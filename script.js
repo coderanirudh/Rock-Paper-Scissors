@@ -84,8 +84,10 @@ function checkGameOver() {
 
         if (humanScore > computerScore) {
             div.textContent += `🎉 You win the game!\n`;
+            alert("🎉 You win the game!");
         } else {
             div.textContent += `💻 Computer wins the game!\n`;
+            alert("💻 Computer wins the game!");
         }
 
         div.textContent += `--- Game Over ---\n\n`;
