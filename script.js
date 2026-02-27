@@ -28,14 +28,17 @@ const paper = buttons[1];
 const scissors = buttons[2];
 
 rock.addEventListener("click", () => {
+    playGame();
     console.log("rock is clicked");
 })
 
 paper.addEventListener("click", () => {
+    playGame();
     console.log("paper is clicked");
 })
 
 scissors.addEventListener("click", () => {
+    playGame();
     console.log("scissors is clicked");
 })
 
