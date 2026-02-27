@@ -75,17 +75,6 @@ function playRound(humanChoice, computerChoice) {
         return true;
     }
 
-for (let i = 0; i < 5; i++) {
-    const humanSelection = getHumanChoice();
-    const computerSelection = getComputerChoice();
-    const validRound = playRound(humanSelection, computerSelection);
-    if (!validRound) {
-        div.textContent += `Enter a valid input`;
-        console.log("Enter a valid input!");
-        i--;
-    }
-}
-
 function displayGameResult() {
     if (humanScore > computerScore) {
         div.textContent += `Congratulations! You Win!`;
