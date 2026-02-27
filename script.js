@@ -16,7 +16,7 @@ function getComputerChoice() {
 
 
 function getHumanChoice() {
-    let humanChoice = prompt("Enter your choice between (Rock / Paper / Scissors) to play: ");
+    let humanChoice = buttons;
     return humanChoice;
 
 }
@@ -61,7 +61,7 @@ function playRound(humanChoice, computerChoice) {
             (humanChoice === "Paper" && computerChoice === "Rock") ||
             (humanChoice === "Scissors" && computerChoice === "Paper")
         ) {
-            div.textContent += `You Win! ${humanChoice} beats ${computerChoice}\n`
+            div.textContent += `You Win! ${humanChoice} beats ${computerChoice}\n`;
             console.log(`You Win! ${humanChoice} beats ${computerChoice}`);
             humanScore++;
         } else if (
@@ -69,7 +69,7 @@ function playRound(humanChoice, computerChoice) {
             (humanChoice === "Paper" && computerChoice === "Scissors") ||
             (humanChoice === "Scissors" && computerChoice === "Rock")
         ) {
-            div.textContent += `You lose! ${computerChoice} beats ${humanChoice}\n`
+            div.textContent += `You lose! ${computerChoice} beats ${humanChoice}\n`;
             console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
             computerScore++;
         } else {
@@ -82,16 +82,15 @@ function playRound(humanChoice, computerChoice) {
         return true;
     }
 
-function playGame() {
-    // for (let i = 0; i < 5; i++) {
-    //     const humanSelection = getHumanChoice();
-    //     const computerSelection = getComputerChoice();
-    //     const validRound = playRound(humanSelection, computerSelection);
-    //     if (!validRound) {
-    //         console.log("Enter a valid input!");
-    //         i--;
-    //     }
-    // }
+for (let i = 0; i < 5; i++) {
+    const humanSelection = getHumanChoice();
+    const computerSelection = getComputerChoice();
+    const validRound = playRound(humanSelection, computerSelection);
+    if (!validRound) {
+        div.textContent += `Enter a valid input`;
+        console.log("Enter a valid input!");
+        i--;
+    }
 }
 
 function displayGameResult() {
