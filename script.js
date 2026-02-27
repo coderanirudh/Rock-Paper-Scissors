@@ -49,10 +49,7 @@ document.body.appendChild(div);
 function playRound(humanChoice, computerChoice) {
         humanChoice = humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1).toLowerCase();
 
-        div.textContent = "Human Choice: ", humanChoice;
-        console.log("Human Choice: ", humanChoice);
-        div.textContent = "Computer Choice: ", computerChoice;
-        console.log("Computer Choice: ", computerChoice);
+        div.textContent = `Human Choice: ${humanChoice}, Computer Choice: ${computerChoice}\n`;
 
         if (humanChoice === computerChoice) {
             console.log("It's a tie!");
