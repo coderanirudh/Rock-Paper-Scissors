@@ -28,17 +28,17 @@ const paper = buttons[1];
 const scissors = buttons[2];
 
 rock.addEventListener("click", () => {
-    playGame("rock");
+    playRound("rock");
     console.log("rock is clicked");
 })
 
 paper.addEventListener("click", () => {
-    playGame("paper");
+    playRound("paper");
     console.log("paper is clicked");
 })
 
 scissors.addEventListener("click", () => {
-    playGame("scissors");
+    playRound("scissors");
     console.log("scissors is clicked");
 })
 
@@ -49,7 +49,9 @@ const div = document.createElement("div");
 function playRound(humanChoice, computerChoice) {
         humanChoice = humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1).toLowerCase();
 
+        div.textContent = "Human Choice: ", humanChoice;
         console.log("Human Choice: ", humanChoice);
+        div.textContent = "Computer Choice: ", computerChoice;
         console.log("Computer Choice: ", computerChoice);
 
         if (humanChoice === computerChoice) {
