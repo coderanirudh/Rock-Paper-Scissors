@@ -50,6 +50,8 @@ function playRound(humanChoice, computerChoice) {
         humanChoice = humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1).toLowerCase();
 
         div.textContent += `Human Choice: ${humanChoice}, Computer Choice: ${computerChoice}\n`;
+        console.log("Human Choice: ", humanChoice);
+        console.log("Computer Choice: ", computerChoice);
 
         if (humanChoice === computerChoice) {
             div.textContent += `It's a tie\n`;
