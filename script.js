@@ -21,7 +21,7 @@ function getHumanChoice() {
 
 }
 
-const buttons = document.querySelector("#container");
+const container = document.querySelector("#container");
 
 
 function playGame() {
