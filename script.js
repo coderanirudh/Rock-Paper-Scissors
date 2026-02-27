@@ -27,7 +27,7 @@ const rock = buttons[0];
 const paper = buttons[1];
 const scissors = buttons[2];
 
-const section = document.createElement("div");
+const div = document.createElement("div");
 
 
 
